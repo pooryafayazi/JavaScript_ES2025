@@ -96,9 +96,9 @@ if (isOldEnough) {     // if (age >= 18) {
 
 const birthYear = 2000;
 if (birthYear % 100 === 0) {
-    console.log(`the birth century is ${Math.floor(birthYear / 100) + 1}`);
+    console.log(`the birth century is ${Math.floor(birthYear / 100) + 1}th.`);
 } else {
-    console.log(`the birth century is ${Math.ceil(birthYear / 100)}`);
+    console.log(`the birth century is ${Math.ceil(birthYear / 100)}th.`);
 }
 
 
