@@ -178,7 +178,7 @@ m = m - 1;
 console.log(m, typeof m);
 */
 
-
+/*
 // 02-023
 let firstName;
 console.log(`5 falsy values: 0, NaN, '', undefined, null`);
@@ -200,6 +200,36 @@ console.log(`typeof '0'      is ${typeof '0'}`, ` Boolean('0') is      ${Boolean
 console.log(`typeof 'Poorya' is ${typeof 'Poorya'}`, ` Boolean('Poorya') is ${Boolean('Poorya')}`);
 console.log(`typeof []       is ${typeof []}`, ` Boolean([]) is       ${Boolean([])}`);
 console.log(`typeof {}       is ${typeof {}}`, ` Boolean({}) is       ${Boolean({})}`);
+*/
+
+
+
+// 02-024
+console.log(`typeof 18 == "18"`, `Boolean(18 == "18") is ${Boolean(18 == "18")}`);
+console.log(`typeof 18 === "18"`, `Boolean(18 === "18") is ${Boolean(18 === "18")}`);
+
+// prompt("Enter your age: ");
+let age = prompt("Enter your age: ");
+console.log(`Your age is ${age}`);
+console.log(`typeof prompt is ${typeof age}`);
+
+if (age == 38) { // '38' == 38
+    console.log(`prompt is string but same value`);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
