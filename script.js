@@ -104,7 +104,7 @@ if (birthYear % 100 === 0) {
 */
 
 
-
+/*
 const massMark = 78;
 const heightMark = 1.69;
 const massJhon = 92;
@@ -135,6 +135,56 @@ Example = round(3.80808, 2) // 3.81
 // console.log(Example);
 var numb = 123.23454.toFixed(2); // 123.23  
 // console.log(numb);
+*/
+
+
+
+// type conversion
+const bill = "275";
+console.log(bill, typeof bill);
+console.log(Number(bill), typeof Number(bill));
+console.log(bill + 100);
+console.log(Number(bill) + 100);
+
+console.log(String(23), typeof String(23));
+
+console.log(` 0 is ${Boolean(0)}, ${typeof Boolean(0)}`);
+console.log(` 1 is ${Boolean(1)}, ${typeof Boolean(1)}`);
+console.log(` "" is ${Boolean("")}, ${typeof Boolean("")}`);
+
+// type coercion
+console.log('I am ' + 38 + ' years old.');
+console.log('I am ' + '38' + ' years old.');
+console.log('I am ' + String(38) + ' years old.');
+
+console.log('2024' - '4' - 10);
+console.log('2024' + '4' + 10);
+console.log('2024' + '4' - 10);
+console.log('2024' - '4' + 10);
+
+console.log('23' * '2');
+console.log('23' / '2');
+console.log(('23' / '0'), typeof ('23' / '0'));
+
+
+let n = '1' + 1;
+console.log(n, typeof n);
+n = n - 1; // 10
+console.log(n, typeof n);
+
+let m = 1 + '1';
+console.log(m, typeof m);
+m = m - 1;
+console.log(m, typeof m);
+
+
+
+
+
+
+
+
+
 
 
 
