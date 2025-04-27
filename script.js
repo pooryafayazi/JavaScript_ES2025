@@ -400,7 +400,7 @@ console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 💧'}`)
 */
 
 
-
+/*
 // 02-033
 // ternary operator
 let bill = 275;
@@ -418,8 +418,7 @@ bill = 430;
 tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2; // ternary operator
 
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
-
-
+*/
 
 
 
