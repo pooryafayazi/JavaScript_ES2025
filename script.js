@@ -385,8 +385,9 @@ if (day === 'monday') {
 
 
 
-
+/*
 // 02-031
+// ternary operator
 const age = 19;
 // condition ? valueIfTrue : valueIfFalse
 // condition ?   if part   : else part
@@ -396,15 +397,27 @@ const drink = age >= 18 ? `wine 🍷` : `water 💧`;
 console.log(`I like to drink ${drink}`);
 
 console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 💧'}`)
+*/
 
 
 
+// 02-033
+// ternary operator
+let bill = 275;
+let tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2; // ternary operator
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
 
 
+bill = 40;
+tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2; // ternary operator
 
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
 
+bill = 430;
+tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2; // ternary operator
 
-
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
 
 
 
