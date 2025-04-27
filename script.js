@@ -203,7 +203,7 @@ console.log(`typeof {}       is ${typeof {}}`, ` Boolean({}) is       ${Boolean(
 */
 
 
-
+/*
 // 02-024
 console.log(`typeof 18 == "18"`, `Boolean(18 == "18") is ${Boolean(18 == "18")}`);
 console.log(`typeof 18 === "18"`, `Boolean(18 === "18") is ${Boolean(18 === "18")}`);
@@ -216,15 +216,42 @@ console.log(`typeof prompt is ${typeof age}`);
 if (age == 38) { // '38' == 38
     console.log(`prompt is string but same value`);
 }
+*/
 
 
 
+// 02-026
+const hasDriverLicense = true; // A variable to indicate if the person has a driver's license
+const hasGoodVision = false; // B variable to indicate if the person has good vision
 
+console.log(`hasDriverLicense: ${hasDriverLicense}`);
+console.log(`hasGoodVision: ${hasGoodVision}`);
 
+console.log(`hasDriverLicense && hasGoodVision is ${hasDriverLicense && hasGoodVision}`); // Logical AND operator
+console.log(`hasDriverLicense || hasGoodVision is ${hasDriverLicense || hasGoodVision}`); // Logical OR operator
 
+console.log(`!hasDriverLicense is ${!hasDriverLicense}`); // Logical NOT operator
+console.log(`!hasGoodVision is ${!hasGoodVision}`); // Logical NOT operator
+console.log(`!(hasDriverLicense && hasGoodVision) is ${!(hasDriverLicense && hasGoodVision)}`);
+console.log(`!(hasDriverLicense || hasGoodVision) is ${!(hasDriverLicense || hasGoodVision)}`);
+console.log(`!hasDriverLicense || hasGoodVision is ${!hasDriverLicense || hasGoodVision}`);
+console.log(`!hasDriverLicense && hasGoodVision is ${!hasDriverLicense && hasGoodVision}`);
 
+// const shouldDrive = hasDriverLicense && hasGoodVision; // A && B variable to indicate if the person should drive
 
+if (hasDriverLicense && hasGoodVision) {
+    console.log(`You are able to drive!`);
+} else {
+    console.log(`You are not able to drive!`);
+}
 
+const isTired = true; // C variable to indicate if the person is tired
+
+if (hasDriverLicense && hasGoodVision && !isTired) {
+    console.log(`You are able to drive!`);
+} else {
+    console.log(`You are not able to drive!`);
+}
 
 
 
