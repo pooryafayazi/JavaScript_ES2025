@@ -219,7 +219,7 @@ if (age == 38) { // '38' == 38
 */
 
 
-
+/*
 // 02-026
 const hasDriverLicense = true; // A variable to indicate if the person has a driver's license
 const hasGoodVision = false; // B variable to indicate if the person has good vision
@@ -252,14 +252,66 @@ if (hasDriverLicense && hasGoodVision && !isTired) {
 } else {
     console.log(`You are not able to drive!`);
 }
+*/
 
 
 
+// 02-028
+// BONUS 1:
+let scoreDolphins = (96 + 108 + 89) / 3; // A variable to store the average score of the Dolphins team
+let scoreKoalas = (88 + 91 + 110) / 3; // B variable to store the average score of the Koalas team
+
+console.log(`BONUS 1:`);
+console.log(`Dolphins score: ${scoreDolphins.toFixed(2)}`);
+console.log(`Koalas score: ${scoreKoalas.toFixed(2)}`);
+
+if (scoreDolphins === scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100) {
+    console.log(`It's a draw! 🏆🏆`);
+} else if (scoreDolphins >= 100 && scoreDolphins > scoreKoalas) {
+    console.log(`Dolphins win! 🏆`);
+} else if (scoreKoalas >= 100 && scoreKoalas > scoreDolphins) {
+    console.log(`Koalas win! 🏆`);
+} else {
+    console.log(`No team wins! 🤷‍♂️`);
+}
 
 
+// BONUS 2:
+scoreDolphins = (97 + 112 + 101) / 3;
+scoreKoalas = (109 + 95 + 123) / 3;
+
+console.log(`BONUS 2:`);
+console.log(`Dolphins score: ${scoreDolphins.toFixed(2)}`);
+console.log(`Koalas score: ${scoreKoalas.toFixed(2)}`);
+
+if (scoreDolphins === scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100) {
+    console.log(`It's a draw! 🏆🏆`);
+} else if (scoreDolphins >= 100 && scoreDolphins > scoreKoalas) {
+    console.log(`Dolphins win! 🏆`);
+} else if (scoreKoalas >= 100 && scoreKoalas > scoreDolphins) {
+    console.log(`Koalas win! 🏆`);
+} else {
+    console.log(`No team wins! 🤷‍♂️`);
+}
 
 
+// BONUS 3:
+scoreDolphins = (97 + 112 + 101) / 3;
+scoreKoalas = (109 + 95 + 106) / 3;
 
+console.log(`BONUS 3:`);
+console.log(`Dolphins score: ${scoreDolphins.toFixed(2)}`);
+console.log(`Koalas score: ${scoreKoalas.toFixed(2)}`);
+
+if (scoreDolphins === scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100) {
+    console.log(`It's a draw! 🏆🏆`);
+} else if (scoreDolphins >= 100 && scoreDolphins > scoreKoalas) {
+    console.log(`Dolphins win! 🏆`);
+} else if (scoreKoalas >= 100 && scoreKoalas > scoreDolphins) {
+    console.log(`Koalas win! 🏆`);
+} else {
+    console.log(`No team wins! 🤷‍♂️`);
+}
 
 
 
