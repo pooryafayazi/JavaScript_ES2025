@@ -1,0 +1,2 @@
+# JavaScript-ES15
+This repository contains JavaScript code adhering to the latest standards as of 2025, showcasing best practices from variable declarations to function definitions and object-oriented programming concepts. It serves as a comprehensive resource for developers looking to enhance their skills and understanding of modern JavaScript. Explore practical examples and clear explanations to deepen your knowledge of this versatile language.
