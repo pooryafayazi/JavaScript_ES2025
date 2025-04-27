@@ -133,12 +133,12 @@ function round(value, precision) {
 }
 Example = round(3.80808, 2) // 3.81
 // console.log(Example);
-var numb = 123.23454.toFixed(2); // 123.23  
+var numb = 123.23454.toFixed(2); // 123.23
 // console.log(numb);
 */
 
-
-
+/*
+// 02-022
 // type conversion
 const bill = "275";
 console.log(bill, typeof bill);
@@ -176,8 +176,30 @@ let m = 1 + '1';
 console.log(m, typeof m);
 m = m - 1;
 console.log(m, typeof m);
+*/
 
 
+// 02-023
+let firstName;
+console.log(`5 falsy values: 0, NaN, '', undefined, null`);
+console.log(`typeof 0              is ${typeof 0}`, `Boolean(0) is             ${Boolean(0)}`);
+console.log(`typeof NaN            is ${typeof NaN}`, `Boolean(NaN) is           ${Boolean(NaN)}`);
+console.log(`typeof ''             is ${typeof ''}`, `Boolean('') is            ${Boolean('')}`);
+console.log(`typeof undefined      is ${typeof undefined}`, `Boolean(undefined) is  ${Boolean(undefined)}`);
+console.log(`typeof let firstName; is ${typeof firstName}`, `Boolean(firstName) is  ${Boolean(firstName)}`);
+console.log(`typeof null           is ${typeof null}`, `Boolean(null) is          ${Boolean(null)}`);
+
+console.log(`-------------------------------------------------------`);
+console.log(`truthy values: 1, '1', '0', ' ', [], {}, -1, Infinity`);
+
+console.log(`typeof 1        is ${typeof 1}`, ` Boolean(1) is        ${Boolean(1)}`);
+console.log(`typeof -1       is ${typeof -1}`, ` Boolean(-1) is       ${Boolean(- 1)}`);
+console.log(`typeof Infinity is ${typeof Infinity}`, ` Boolean(Infinity) is ${Boolean(Infinity)} `);
+console.log(`typeof '1'      is ${typeof '1'}`, ` Boolean('1') is      ${Boolean('1')}`);
+console.log(`typeof '0'      is ${typeof '0'}`, ` Boolean('0') is      ${Boolean('0')}`);
+console.log(`typeof 'Poorya' is ${typeof 'Poorya'}`, ` Boolean('Poorya') is ${Boolean('Poorya')}`);
+console.log(`typeof []       is ${typeof []}`, ` Boolean([]) is       ${Boolean([])}`);
+console.log(`typeof {}       is ${typeof {}}`, ` Boolean({}) is       ${Boolean({})}`);
 
 
 
