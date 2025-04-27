@@ -94,20 +94,47 @@ if (isOldEnough) {     // if (age >= 18) {
 }
 */
 
+/*
 const birthYear = 2000;
 if (birthYear % 100 === 0) {
     console.log(`the birth century is ${Math.floor(birthYear / 100) + 1}th.`);
 } else {
     console.log(`the birth century is ${Math.ceil(birthYear / 100)}th.`);
 }
+*/
 
 
 
+const massMark = 78;
+const heightMark = 1.69;
+const massJhon = 92;
+const heightJhon = 1.95;
+
+let BMIMark;
+let BMIJhon;
+
+BMIMark = massMark / (heightMark ** 2);
+BMIJhon = massJhon / (heightJhon ** 2);
 
 
+if (BMIMark > BMIJhon) {
+    console.log(`Mark's BMI (${BMIMark.toFixed(2)}) is higher than John's (${BMIJhon.toFixed(2)})!`);
+}
+else if (BMIMark < BMIJhon) {
+    console.log(`John's BMI (${BMIJhon.toFixed(2)}) is higher than Mark's (${BMIMark.toFixed(2)})!`);
+} else {
+    console.log(`Mark's BMI (${BMIMark.toFixed(2)}) is equal to John's (${BMIJhon.toFixed(2)})!`);
+}
 
 
-
+function round(value, precision) {
+    var multiplier = Math.pow(10, precision || 0);
+    return Math.round(value * multiplier) / multiplier;
+}
+Example = round(3.80808, 2) // 3.81
+// console.log(Example);
+var numb = 123.23454.toFixed(2); // 123.23  
+// console.log(numb);
 
 
 
