@@ -316,7 +316,7 @@ if (scoreDolphins === scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100)
 
 
 
-
+/*
 // 02-029
 // const day = 'sunday';
 let day = prompt('Enter the day of the week: ').toLowerCase();
@@ -367,3 +367,55 @@ if (day === 'monday') {
 } else {
     console.log(`Not a valid day!`);
 }
+*/
+
+
+
+// 02-030
+// expression vs statement :
+
+// expression: a piece of code that produces a value for example: 3 + 4, 1991, true, 'Poorya', undefined, null, etc.
+// expression: 3 + 4;
+// expression: true && false && !true;
+// expression: 3 + 4 > 2;
+
+// statement: a piece of code that performs an action for example: if, switch, while, for, etc.
+// statement: if (3 + 4) { console.log('Hello') }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
