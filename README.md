@@ -1,2 +1,2 @@
-# JavaScript-ES6+ (ES2025)
+# JavaScript ES6+ (ES2025)
 This repository features JavaScript ES6+ code aligned with 2025 standards, highlighting best practices in variable declarations, function definitions, and object-oriented programming. It serves as a valuable resource for developers aiming to improve their skills in modern JavaScript, offering practical examples and clear explanations to enhance understanding of this versatile language.
