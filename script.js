@@ -370,7 +370,7 @@ if (day === 'monday') {
 */
 
 
-
+/*
 // 02-030
 // expression vs statement :
 
@@ -381,10 +381,21 @@ if (day === 'monday') {
 
 // statement: a piece of code that performs an action for example: if, switch, while, for, etc.
 // statement: if (3 + 4) { console.log('Hello') }
+*/
 
 
 
 
+// 02-031
+const age = 19;
+// condition ? valueIfTrue : valueIfFalse
+// condition ?   if part   : else part
+age >= 18 ? console.log(`I like to drink wine 🍷`) : console.log(`I like to drink water 💧`);
+
+const drink = age >= 18 ? `wine 🍷` : `water 💧`;
+console.log(`I like to drink ${drink}`);
+
+console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 💧'}`)
 
 
 
