@@ -104,7 +104,7 @@ console.log(fruitProcessor(2, 3));
 
 
 
-
+/*
 // 03-043
 const calcAverage = (a, b, c) => (a + b + c) / 3;
 
@@ -134,15 +134,47 @@ aveKoalas = calcAverage(23, 34, 27);
 
 console.log(aveDolphins, aveKoalas);
 checkWinner(aveDolphins, aveKoalas);
+*/
 
 
 
 
 
+// 03-044
+// Array Method: push, unshift, pop, shift, indexOf, includes
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+const years = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
 
 
+friends[2] = 'Jay';
+console.log(friends);
 
+// friends = ['Bob', 'Alice']; // Error: Assignment to constant variable.
 
+const firstName = 'Poorya';
+const jonas = [firstName, 'Fayazu', 2025 - 1986, 'teacher', friends];
+
+console.log(jonas);
+console.log(jonas.length);
+console.log(jonas[0]);
+console.log(jonas[4][2]);
+
+// Exercise
+const calcAge = function (birthYear) {
+    return 2025 - birthYear;
+}
+const years2 = [1991, 1984, 2008, 2020];
+
+const ages = [calcAge(years2[0]), calcAge(years2[1]), calcAge(years2[years2.length - 1])];
+console.log(ages);
 
 
 
