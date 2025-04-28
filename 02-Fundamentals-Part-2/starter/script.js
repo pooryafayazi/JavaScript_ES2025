@@ -258,7 +258,7 @@ console.log(`total: ${total}`);
 
 
 
-
+/*
 // 03-047
 // Array Literal
 const pooryaArray = [
@@ -279,6 +279,7 @@ const poorya = {
     job: 'teacher',
     friends: ['Michael', 'Steven', 'Peter']
 };
+
 
 
 // 03-049
@@ -310,23 +311,75 @@ console.log(poorya);
 // Challenge
 // "Poorya has 3 friends, and his best friend is Michael"
 console.log(`${poorya.firstName} has ${poorya.friends.length} friends, and his best friend is ${poorya.friends[0]}`);
+*/
 
 
 
 
 
+// 03-050
+// Object Method
+const poorya = {
+    firstName: 'Poorya',
+    lastName: 'Fayazi',
+    birthYear: 1986,
+    job: 'teacher',
+    friends: ['Michael', 'Steven', 'Peter'],
+    hasDriverLicense: true,
+
+    // function expression is called -> "method"
+    calcAge: function (birthYear) {
+        return 2025 - birthYear;
+    },
+};
 
 
+console.log(poorya.calcAge(1986));
+console.log(poorya['calcAge'](1986));
+console.log(poorya.calcAge(poorya.birthYear));
 
 
+const poorya2 = {
+    firstName: 'Poorya',
+    lastName: 'Fayazi',
+    birthYear: 1986,
+    job: 'teacher',
+    friends: ['Michael', 'Steven', 'Peter'],
+    hasDriverLicense: true,
+
+    // function without parameter
+    calcAge: function () {
+        console.log(this); // "this" is the object itself
+        // this.birthYear = 1986;
+        return 2025 - this.birthYear;
+    },
+};
+
+console.log(poorya2.calcAge());
 
 
+const poorya3 = {
+    firstName: 'Poorya',
+    lastName: 'Fayazi',
+    birthYear: 1986,
+    job: 'teacher',
+    friends: ['Michael', 'Steven', 'Peter'],
+    hasDriverLicense: false,
 
+    // function without parameter
+    calcAge: function () {
+        this.age = 2025 - this.birthYear;  // add age property to the object
+        return this.age;
+    },
 
+    getSummary: function () {
+        return `${this.firstName} is a ${this.age}-year ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriverLicense ? 'a' : 'no'} driver's license.`;
+    },
+};
 
-
-
-
+console.log(poorya3.calcAge());
+console.log(poorya3.age);
+console.log(poorya3.getSummary());
 
 
 
