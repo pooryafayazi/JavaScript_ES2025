@@ -385,7 +385,7 @@ console.log(poorya3.getSummary());
 
 
 
-
+/*
 // 03-052
 const mark = {
     fullName: 'Mark Miller',
@@ -421,7 +421,18 @@ if (mark.bmi > john.bmi) {
 } else {
     console.log(`Both have the same BMI (${mark.bmi.toFixed(2)})`);
 }
+*/
 
+
+
+
+
+// 03-053
+// for loop has three parts:
+// for (initial value as a counter ; check condition before each loop ; update counter after iteration )
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetation ${rep} 🏋️‍♀️`);
+}
 
 
 
