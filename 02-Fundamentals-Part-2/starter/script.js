@@ -549,6 +549,7 @@ while (rep <= 10) {
     rep++;
 }
 
+
 console.log('--- random number between 0 and 1  ---');
 console.log(Math.random()); // random number between 0 and 1   
 
@@ -559,20 +560,27 @@ console.log('--- random integer between 0 and 5 ---');
 console.log(Math.trunc(Math.random() * 6)); // random integer between 0 and 5
 
 
-
-
-
-// while loop with condition check before each loop
-// 1. Generate random number between 1 and 6 (inclusive)
-let dice = Math.trunc(Math.random() * 6) + 1;
+// while loop
+console.log('--- While Loop ---');
+let dice = Math.trunc(Math.random() * 6) + 1; // random number between 1 and 6
 while (dice !== 6) {
     console.log(`You rolled a ${dice}`);
-    dice = Math.trunc(Math.random() * 6) + 1; // random number between 1 and 6
+    dice = Math.trunc(Math.random() * 6) + 1;
 
     if (dice === 6) console.log('Loop is about to end...');
-
 }
 
+
+
+// do while loop 
+console.log('--- Do While Loop ---');
+let dice2 = Math.trunc(Math.random() * 6) + 1;
+do {
+    console.log(`You rolled a ${dice2}`);
+    dice2 = Math.trunc(Math.random() * 6) + 1;
+
+    if (dice2 === 6) console.log('Loop is about to end...');
+} while (dice2 !== 6); // check condition after each loop
 
 
 
