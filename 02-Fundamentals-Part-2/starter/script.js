@@ -218,7 +218,17 @@ console.log(friends.indexOf('Peter'));
 console.log(friends.indexOf('John')); // -1 (not found)
 
 
+// includes check if element exists
+console.log(friends.includes('Steven')); // true
+console.log(friends.includes('John')); // false
+
+friends.push(23);
+console.log(friends.includes('23')); // false (string)
+console.log(friends.includes(23)); // true (number)
 
 
-
-
+if (friends.includes('Steven')) {
+    console.log('You have a friend called Steven');
+} else {
+    console.log('You have no friend called Steven');
+}
