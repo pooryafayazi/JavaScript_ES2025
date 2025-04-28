@@ -495,7 +495,7 @@ for (let i = 0; i < pooryaArray.length; i++) {
 
 
 
-
+/*
 // 03-055
 // Looping Backwards and Loops in Loops
 const pooryaArray = [
@@ -535,11 +535,43 @@ for (let exercise = 1; exercise <= 3; exercise++) {
         console.log(`Exercise ${exercise}: Lifting weight repetation ${rep} 🏋️‍♀️`);
     }
 }
+*/
 
 
 
 
 
+// 03-056
+// While Loop with condition check before each loop
+let rep = 1;
+while (rep <= 10) {
+    console.log(`Lifting weights repetation ${rep} ${"🏋️‍♀️".repeat(rep)}`);
+    rep++;
+}
+
+console.log('--- random number between 0 and 1  ---');
+console.log(Math.random()); // random number between 0 and 1   
+
+console.log("--- random number between 0 and 6 but it's not an integer ---");
+console.log(Math.random() * 6); // random number between 0 and 6 but it's not an integer
+
+console.log('--- random integer between 0 and 5 ---');
+console.log(Math.trunc(Math.random() * 6)); // random integer between 0 and 5
+
+
+
+
+
+// while loop with condition check before each loop
+// 1. Generate random number between 1 and 6 (inclusive)
+let dice = Math.trunc(Math.random() * 6) + 1;
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1; // random number between 1 and 6
+
+    if (dice === 6) console.log('Loop is about to end...');
+
+}
 
 
 
