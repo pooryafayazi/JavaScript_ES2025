@@ -180,7 +180,7 @@ console.log(ages);
 
 
 
-
+/*
 // 03-045
 // Array Method: push, unshift, pop, shift, indexOf, includes
 const friends = ['Michael', 'Steven', 'Peter'];
@@ -232,3 +232,41 @@ if (friends.includes('Steven')) {
 } else {
     console.log('You have no friend called Steven');
 }
+*/
+
+
+
+
+
+// 03-046
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+// const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+console.log(bills, tips, total);
+console.log(`bills: ${bills}`);
+console.log(`tips: ${tips}`);
+console.log(`total: ${total}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
