@@ -84,7 +84,7 @@ console.log(yearsUnitRetriement(1982, 'Bob'));
 
 
 
-
+/*
 // 03-040
 // Function Calling Another Function
 function cutFruitPieces(fruit) {
@@ -100,6 +100,42 @@ function fruitProcessor(apples, oranges) {
 }
 
 console.log(fruitProcessor(2, 3));
+*/
+
+
+
+
+// 03-043
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+
+// Test 1c
+let aveDolphins = calcAverage(44, 23, 71);
+let aveKoalas = calcAverage(65, 54, 49);
+console.log(aveDolphins, aveKoalas);
+
+
+// const checkWinner = function (aveDolphins, aveKoalas) {
+function checkWinner(aveDolphins, aveKoalas) {
+    if (aveDolphins >= 2 * aveKoalas) {
+        console.log(`Dolphins win 🏆 (${aveDolphins} vs. ${aveKoalas})`);
+    } else if (aveKoalas >= 2 * aveDolphins) {
+        console.log(`Koalas win 🏆 (${aveKoalas} vs. ${aveDolphins})`);
+    } else {
+        console.log('No team wins...');
+    }
+}
+
+checkWinner(aveDolphins, aveKoalas);
+
+
+// Test 2
+aveDolphins = calcAverage(85, 54, 41);
+aveKoalas = calcAverage(23, 34, 27);
+
+console.log(aveDolphins, aveKoalas);
+checkWinner(aveDolphins, aveKoalas);
+
+
 
 
 
