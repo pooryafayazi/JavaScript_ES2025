@@ -237,7 +237,7 @@ if (friends.includes('Steven')) {
 
 
 
-
+/*
 // 03-046
 const calcTip = function (bill) {
     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
@@ -253,6 +253,84 @@ console.log(bills, tips, total);
 console.log(`bills: ${bills}`);
 console.log(`tips: ${tips}`);
 console.log(`total: ${total}`);
+*/
+
+
+
+
+
+// 03-047
+// Array Literal
+const pooryaArray = [
+    'Poorya',
+    'Fayazi',
+    2025 - 1986,
+    'teacher',
+    ['Michael', 'Steven', 'Peter']
+];
+console.log(pooryaArray);
+
+
+// Object Literal
+const poorya = {
+    firstName: 'Poorya',
+    lastName: 'Fayazi',
+    age: 2025 - 1986,
+    job: 'teacher',
+    friends: ['Michael', 'Steven', 'Peter']
+};
+
+
+// 03-049
+console.log(poorya);
+
+console.log(poorya.lastName);
+console.log(poorya['lastName']);
+
+console.log(poorya['friends']);
+console.log(poorya['friends'][0]);
+
+const nameKey = 'Name';
+console.log(poorya['first' + nameKey]);
+console.log(poorya['last' + nameKey]);
+
+// console.log(poorya.'last' + nameKey); // Error: Unexpected string
+
+const interestedIn = prompt('What do you want to know about Poorya? Choose between firstName, lastName, age, job, friends');
+if (poorya[interestedIn]) {
+    console.log(poorya[interestedIn]);
+} else {
+    console.log('Wrong request! Choose between firstName, lastName, age, job, friends');
+}
+
+poorya.location = 'America';
+poorya['github'] = 'pooryafayazi';
+console.log(poorya);
+
+// Challenge
+// "Poorya has 3 friends, and his best friend is Michael"
+console.log(`${poorya.firstName} has ${poorya.friends.length} friends, and his best friend is ${poorya.friends[0]}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
