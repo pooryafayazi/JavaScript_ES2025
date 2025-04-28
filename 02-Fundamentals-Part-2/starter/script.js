@@ -426,13 +426,74 @@ if (mark.bmi > john.bmi) {
 
 
 
-
+/*
 // 03-053
 // for loop has three parts:
 // for (initial value as a counter ; check condition before each loop ; update counter after iteration )
 for (let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights repetation ${rep} 🏋️‍♀️`);
 }
+*/
+
+
+
+
+// 03-054
+// Looping Arrays, Breaking and Continuing
+const pooryaArray = [
+    'Poorya',
+    'Fayazi',
+    2025 - 1986,
+    'teacher',
+    ['Michael', 'Steven', 'Peter'],
+    false
+];
+// console.log(pooryaArray);
+
+const types = [];
+const types2 = [];
+
+for (let i = 0; i < pooryaArray.length; i++) {
+    // Reading from pooryaArray
+    console.log(pooryaArray[i], typeof pooryaArray[i]);
+
+    // Filling types array
+    types[i] = typeof pooryaArray[i];
+    types2.push(typeof pooryaArray[i]); // another way to fill array
+}
+
+console.log(types);
+console.log(types2);
+
+const years = [1991, 1984, 2008, 2020];
+const ages = [];
+const ages2 = [];
+for (let i = 0; i < years.length; i++) {
+    ages[i] = 2025 - years[i];
+    ages2.push(2025 - years[i]); // another way to fill array
+}
+
+console.log(ages);
+console.log(ages2);
+
+
+// Continue and Break
+console.log('--- Only Strings ---');
+for (let i = 0; i < pooryaArray.length; i++) {
+    if (typeof pooryaArray[i] !== 'string') continue; // skip if not string
+
+    console.log(pooryaArray[i], typeof pooryaArray[i]);
+}
+
+console.log('--- Break with Number ---');
+for (let i = 0; i < pooryaArray.length; i++) {
+    if (typeof pooryaArray[i] === 'number') break; // break if number
+
+    console.log(pooryaArray[i], typeof pooryaArray[i]);
+}
+
+
+
 
 
 
