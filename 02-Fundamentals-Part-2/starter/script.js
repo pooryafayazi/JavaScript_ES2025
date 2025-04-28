@@ -139,9 +139,9 @@ checkWinner(aveDolphins, aveKoalas);
 
 
 
-
+/*
 // 03-044
-// Array Method: push, unshift, pop, shift, indexOf, includes
+// Array Declaration
 const friends = ['Michael', 'Steven', 'Peter'];
 console.log(friends);
 
@@ -175,12 +175,47 @@ const years2 = [1991, 1984, 2008, 2020];
 
 const ages = [calcAge(years2[0]), calcAge(years2[1]), calcAge(years2[years2.length - 1])];
 console.log(ages);
+*/
 
 
 
 
 
+// 03-045
+// Array Method: push, unshift, pop, shift, indexOf, includes
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
 
+
+// push add to the end
+console.log(`push Jay, add to the end`);
+friends.push('Jay');
+console.log(friends);
+
+
+// unshift add to the beginning
+console.log(`unshift John, add to the beginning`);
+friends.unshift('John');
+console.log(friends);
+
+
+// pop remove last element
+const popped = friends.pop();
+console.log(`popped: ${popped}, remove last element`);
+console.log(friends);
+
+
+// shift remove first element
+const shifted = friends.shift();
+console.log(`shifted: ${shifted}, remove first element`);
+console.log(friends);
+
+
+// indexOf find index of element
+console.log(friends.indexOf('Michael'));
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Peter'));
+console.log(friends.indexOf('John')); // -1 (not found)
 
 
 
