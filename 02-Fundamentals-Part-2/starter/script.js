@@ -39,7 +39,7 @@ console.log(appleJuice);
 
 
 
-
+/*
 // 03-038
 // Function Declaration (called before declaration)
 const age1 = calcAge1(1986); //called before declaration
@@ -79,13 +79,27 @@ const yearsUnitRetriement = (birthYear, firstName) => {
 
 console.log(yearsUnitRetriement(1986, 'Poorya'));
 console.log(yearsUnitRetriement(1982, 'Bob'));
+*/
 
 
 
 
 
+// 03-040
+// Function Calling Another Function
+function cutFruitPieces(fruit) {
+    return fruit * 4;
+}
 
 
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+    const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges.`;
+    return juice;
+}
+
+console.log(fruitProcessor(2, 3));
 
 
 
