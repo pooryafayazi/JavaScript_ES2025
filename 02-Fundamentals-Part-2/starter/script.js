@@ -437,7 +437,7 @@ for (let rep = 1; rep <= 10; rep++) {
 
 
 
-
+/*
 // 03-054
 // Looping Arrays, Breaking and Continuing
 const pooryaArray = [
@@ -491,11 +491,50 @@ for (let i = 0; i < pooryaArray.length; i++) {
 
     console.log(pooryaArray[i], typeof pooryaArray[i]);
 }
+*/
 
 
 
 
+// 03-055
+// Looping Backwards and Loops in Loops
+const pooryaArray = [
+    'Poorya',
+    'Fayazi',
+    2025 - 1986,
+    'teacher',
+    ['Michael', 'Steven', 'Peter']
+];
+// console.log(pooryaArray);
 
+const types = [];
+const types2 = [];
+const types3 = [];
+
+// Looping backwards
+for (let i = pooryaArray.length - 1; i >= 0; i--) {
+    // Reading from pooryaArray
+    console.log(i, pooryaArray[i], typeof pooryaArray[i]);
+
+    // Filling types array
+    types[i] = typeof pooryaArray[i];
+    types2[pooryaArray.length - 1 - i] = typeof pooryaArray[i];
+    types3.push(typeof pooryaArray[i]);
+}
+
+console.log(types);
+console.log(types2);
+console.log(types3);
+
+
+// Loop in Loop
+for (let exercise = 1; exercise <= 3; exercise++) {
+    console.log(`--- Starting Exercise ${exercise} ${"🤞".repeat(exercise)} --- `);
+
+    for (let rep = 1; rep <= 5; rep++) {
+        console.log(`Exercise ${exercise}: Lifting weight repetation ${rep} 🏋️‍♀️`);
+    }
+}
 
 
 
