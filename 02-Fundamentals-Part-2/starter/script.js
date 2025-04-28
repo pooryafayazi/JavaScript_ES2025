@@ -316,7 +316,7 @@ console.log(`${poorya.firstName} has ${poorya.friends.length} friends, and his b
 
 
 
-
+/*
 // 03-050
 // Object Method
 const poorya = {
@@ -380,15 +380,47 @@ const poorya3 = {
 console.log(poorya3.calcAge());
 console.log(poorya3.age);
 console.log(poorya3.getSummary());
+*/
 
 
 
 
 
+// 03-052
+const mark = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.bmi = this.mass / (this.height ** 2);
+        return this.bmi;
+    }
+};
+const john = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        this.bmi = this.mass / (this.height ** 2);
+        return this.bmi;
+    }
+};
+
+mark.calcBMI();
+console.log(mark.bmi);
 
 
+john.calcBMI();
+console.log(john.bmi);
 
 
+if (mark.bmi > john.bmi) {
+    console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})`);
+} else if (john.bmi > mark.bmi) {
+    console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})`);
+} else {
+    console.log(`Both have the same BMI (${mark.bmi})`);
+}
 
 
 
