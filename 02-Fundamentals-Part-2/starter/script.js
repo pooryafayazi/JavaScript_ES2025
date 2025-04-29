@@ -583,6 +583,7 @@ console.log(`Average Total: ${calcAverage(totals)}`);
 console.log(`Average Bill: ${calcAverage(bills)}`);
 */
 
+/*
 // 05-070
 const printForecast = function (arr) {
   let str = "... ";
@@ -597,3 +598,28 @@ console.log(printForecast(arr1));
 
 const arr2 = [12, 5, -5, 0, 4];
 console.log(printForecast(arr2));
+*/
+
+// 05-072
+const freelancers = function (arr) {
+  let totalHours = 0;
+  let numberOfDaysWorked = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    totalHours += arr[i];
+    if (arr[i] !== 0) numberOfDaysWorked += 1;
+  }
+  const tot = arr.reduce((a, b) => a + b, 0);
+  const averageDailyHours = totalHours / arr.length;
+  const mostHours = Math.max(...arr);
+  const fullTime = totalHours >= 35 ? "is full-time" : "is not full-time";
+
+  console.log(`total time : ${totalHours}`);
+  console.log(`tot : ${tot}`);
+  console.log(`number of days worked : ${numberOfDaysWorked}`);
+  console.log(`average daily hours : ${averageDailyHours.toFixed(2)}`);
+  console.log(`most hours : ${mostHours}`);
+  console.log(`this week ${fullTime}`);
+};
+
+freelancers([7.5, 8, 6.5, 0, 8.5, 4, 0]);
