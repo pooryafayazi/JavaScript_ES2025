@@ -1,5 +1,4 @@
-'use strict';
-
+"use strict";
 
 /*
 // 03-036
@@ -13,7 +12,6 @@ if (hasDriversLicense) console.log('I can drive!');
 const interface = 'Audio';
 const private = 534;
 */
-
 
 /*
 // 03-037
@@ -35,9 +33,6 @@ function fruitProcessor(apples, oranges) {
 const appleJuice = fruitProcessor(5, 0);
 console.log(appleJuice);
 */
-
-
-
 
 /*
 // 03-038
@@ -81,9 +76,6 @@ console.log(yearsUnitRetriement(1986, 'Poorya'));
 console.log(yearsUnitRetriement(1982, 'Bob'));
 */
 
-
-
-
 /*
 // 03-040
 // Function Calling Another Function
@@ -101,8 +93,6 @@ function fruitProcessor(apples, oranges) {
 
 console.log(fruitProcessor(2, 3));
 */
-
-
 
 /*
 // 03-043
@@ -135,9 +125,6 @@ aveKoalas = calcAverage(23, 34, 27);
 console.log(aveDolphins, aveKoalas);
 checkWinner(aveDolphins, aveKoalas);
 */
-
-
-
 
 /*
 // 03-044
@@ -176,9 +163,6 @@ const years2 = [1991, 1984, 2008, 2020];
 const ages = [calcAge(years2[0]), calcAge(years2[1]), calcAge(years2[years2.length - 1])];
 console.log(ages);
 */
-
-
-
 
 /*
 // 03-045
@@ -234,9 +218,6 @@ if (friends.includes('Steven')) {
 }
 */
 
-
-
-
 /*
 // 03-046
 const calcTip = function (bill) {
@@ -254,9 +235,6 @@ console.log(`bills: ${bills}`);
 console.log(`tips: ${tips}`);
 console.log(`total: ${total}`);
 */
-
-
-
 
 /*
 // 03-047
@@ -312,9 +290,6 @@ console.log(poorya);
 // "Poorya has 3 friends, and his best friend is Michael"
 console.log(`${poorya.firstName} has ${poorya.friends.length} friends, and his best friend is ${poorya.friends[0]}`);
 */
-
-
-
 
 /*
 // 03-050
@@ -382,9 +357,6 @@ console.log(poorya3.age);
 console.log(poorya3.getSummary());
 */
 
-
-
-
 /*
 // 03-052
 const mark = {
@@ -423,9 +395,6 @@ if (mark.bmi > john.bmi) {
 }
 */
 
-
-
-
 /*
 // 03-053
 // for loop has three parts:
@@ -434,8 +403,6 @@ for (let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights repetation ${rep} 🏋️‍♀️`);
 }
 */
-
-
 
 /*
 // 03-054
@@ -493,8 +460,6 @@ for (let i = 0; i < pooryaArray.length; i++) {
 }
 */
 
-
-
 /*
 // 03-055
 // Looping Backwards and Loops in Loops
@@ -536,9 +501,6 @@ for (let exercise = 1; exercise <= 3; exercise++) {
     }
 }
 */
-
-
-
 
 /*
 // 03-056
@@ -583,11 +545,7 @@ do {
 } while (dice2 !== 6); // check condition after each loop
 */
 
-
-
-
-
-
+/*
 // 03-058
 // Coding Challenge #4
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
@@ -623,3 +581,19 @@ const calcAverage = function (arr) {
 console.log(`Average Tip: ${calcAverage(tips)}`);
 console.log(`Average Total: ${calcAverage(totals)}`);
 console.log(`Average Bill: ${calcAverage(bills)}`);
+*/
+
+// 05-070
+const printForecast = function (arr) {
+  let str = "... ";
+  for (let i = 0; i < arr.length; i++) {
+    str += `${arr[i]}°C in ${i + 1} days ... `;
+  }
+  console.log(str);
+};
+
+const arr1 = [17, 21, 23];
+console.log(printForecast(arr1));
+
+const arr2 = [12, 5, -5, 0, 4];
+console.log(printForecast(arr2));
